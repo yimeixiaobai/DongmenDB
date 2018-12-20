@@ -12,7 +12,6 @@
 #include <stdio.h>
 #include "shell/shell.h"
 
-#define  MAX_CMD 512
 
 int main(int argc, char *argv[]) {
     int opt;
@@ -45,7 +44,7 @@ int main(int argc, char *argv[]) {
     int n;
 
     setbuf(stdout,0);
-
+    setbuf(stderr,0);
     while (1) {
         printf("\ndongmendb>");
 
